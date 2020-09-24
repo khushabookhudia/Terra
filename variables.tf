@@ -28,6 +28,7 @@ variable "network_name" {
 
 variable "project_id" {
   type = string
+  description = "Project Id of the project you want to create resources in"
 }
 
 variable "auto_create_subnetworks" {
