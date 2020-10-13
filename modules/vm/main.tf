@@ -1,4 +1,10 @@
+resource "null_resource" "previous1" {}
 
+resource "time_sleep" "wait_300_secs" {
+  depends_on = [null_resource.previous1]
+
+  create_duration = "5m"
+}
 resource "google_compute_instance" "instance" {
 
   name                      = var.name
@@ -7,6 +13,7 @@ resource "google_compute_instance" "instance" {
   zone                      = var.zone
   allow_stopping_for_update = true
   tags                      = var.tags
+  depends_on = [time_sleep.wait_300_secs]
   boot_disk {
 
     initialize_params {

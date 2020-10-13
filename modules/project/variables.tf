@@ -16,7 +16,7 @@ variable "billing_account" {
     description = "Billing account Id with which the project will be attached to."
 }
 
-variable "folder_id" {
-    type = string
-    description = "Folder Id under which project needs to be created."
-}
+#variable "folder_id" {
+#    type = string
+#    description = "Folder Id under which project needs to be created."
+#}

@@ -92,15 +92,15 @@ variable "boot_disk_size" {
 }
 
 
-# variable "org_id" {
-#   type = string
-#   description = "(optional) describe your variable"
-# }
+variable "org_id" {
+  type = string
+  description = "(optional) describe your variable"
+}
 
-# variable "billing_account" {
-#   type = string
-#   description = "(optional) describe your variable"
-# }
+variable "billing_account" {
+  type = string
+  description = "(optional) describe your variable"
+}
 # variable "folder_id" {
 #   type = string
 #   description = "(optional) describe your variable"
